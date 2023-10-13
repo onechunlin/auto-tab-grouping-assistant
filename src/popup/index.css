@@ -1,0 +1,10 @@
+.container {
+  width: 600px;
+  height: 400px;
+  box-sizing: border-box;
+  padding: 8px 16px;
+}
+
+.group {
+  display: flex;
+}

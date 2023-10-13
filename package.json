@@ -2,7 +2,7 @@
   "name": "auto-tab-grouping-assistant",
   "displayName": "Auto tab grouping assistant",
   "version": "0.0.1",
-  "description": "自动标签页分组助手。该插件可以根据用户的需求，将标签页分为不同的组别，例如工作、娱乐、学习等。用户可以在插件的设置页面中定义不同的分组规则，例如根据标签页的 URL、标题、关键词等进行分组。插件会自动监测用户打开的标签页，并根据分组规则将标签页分配到相应的组别中。",
+  "description": "自动标签页分组助手",
   "author": "onechunlin",
   "scripts": {
     "dev": "plasmo dev",
@@ -10,6 +10,9 @@
     "test": "plasmo test"
   },
   "dependencies": {
+    "@ant-design/icons": "^5.2.6",
+    "@plasmohq/storage": "^1.8.0",
+    "antd": "^5.10.0",
     "plasmo": "0.83.0",
     "react": "18.2.0",
     "react-dom": "18.2.0"
@@ -26,6 +29,9 @@
   "manifest": {
     "host_permissions": [
       "https://*/*"
+    ],
+    "permissions": [
+      "tabGroups"
     ]
   }
 }
